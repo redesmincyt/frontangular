@@ -52,7 +52,6 @@ body{
 	width: 350px;
 	height: 350px;
 	position: relative;
-	/*top: -40%; */
 	border: 5px double var(--main-color);
 }
  .about-me h1 {
@@ -108,20 +107,4 @@ body{
 }
 #skill-css .progress-bar{
 	background-color:#1b17ff;
-}
-
-/* FOOTER */
-
-.web-footer{
-	background-color: var(--main-color);
-	text-align: center;
-	color: white;
-	max-width: 100%;
-	width: 100%;
-	height: 5vh;
-}
-.web-footer h2{
-	font-size: 20px;
-	padding-top: 1.1vh;
-	display: inline-block;
 }
