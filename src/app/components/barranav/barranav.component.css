@@ -1,0 +1,17 @@
+.navbar{
+	background: var(--main-color) !important;
+	justify-content: left !important;
+}
+
+.navbar-brand img{
+	width: 8em;
+	margin-right: -0.5rem;
+}
+.navbar-brand-text{
+	font-size: 1.2em;
+	margin-bottom: 0;
+	color: white;
+	font-family: "Poppins",sans-serif;
+	margin-bottom: .2rem;
+	padding-bottom: 4px;
+}
