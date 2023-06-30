@@ -1,6 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AddExperienciaComponent } from 'src/app/components/add-experiencia/add-experiencia.component';
+import { Exp } from 'src/app/Exp';
 
 @Component({
   selector: 'app-experiencia',
@@ -21,13 +23,12 @@ export class ExperienciaComponent implements OnInit {
     });
   }
   
-  addReg(): void {
-    console.log("AGREGO REGISTRO");
+  onDelete(expid: string): void {
+    this.datosPorfolio.onDeleteExp(expid).subscribe();
   }
-
-  onDelete(expid: String): void {
-    /*console.log("BORRO " + expid); */
-    this.onDeleteExp.emit(expid);
+  
+  addExp(newExp: Exp): void {
+    this.datosPorfolio.onAddExp(newExp).subscribe();
+    
   }
-
 }

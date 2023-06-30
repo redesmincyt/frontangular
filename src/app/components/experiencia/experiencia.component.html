@@ -3,7 +3,7 @@
     <div class="row gx-5">
       <div class="panel col-lg-12">
         <h2 class="section-title">EXPERIENCIA LABORAL</h2>
-        <app-add-experiencia/>
+        <app-add-experiencia (onAddExp)="addExp($event)"/>
         <div class="card mb-3" *ngFor="let exp of experienciaList">
           <div class="row g-0">
             <div class="col-md-4">

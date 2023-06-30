@@ -1,35 +1,35 @@
-<form  class="card mb-3">
+<form  class="card mb-3" (ngSubmit)="addReg()">
     <div class="mb-3 row">
         <label for="text" class="col-sm-2 col-form-label">URL logo</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="explogo" id="explogo" placeholder="url del logo"/>
+            <input type="text" class="form-control" name="explogo" id="explogo" placeholder="url del logo" [(ngModel)]="explogo"/>
         </div>
     </div>
     <div class="mb-3 row">
         <label for="text"class="col-sm-2 col-form-label" >Empresa</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="empresa" id="empresa" placeholder="empresa"/>
+            <input type="text" class="form-control" name="empresa" id="empresa" placeholder="empresa" [(ngModel)]="empresa"/>
         </div>
     </div>
     <div class="mb-3 row">
         <label for="text" class="col-sm-2 col-form-label">Puesto</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="puesto" id="puesto" placeholder="puesto"/>
+            <input type="text" class="form-control" name="puesto" id="puesto" placeholder="puesto" [(ngModel)]="puesto"/>
         </div>
     </div>
     <div class="mb-3 row">
         <label for="text" class="col-sm-2 col-form-label">Detalle</label>
         <div class="col-sm-10">
-            <input class="form-control" rows="2" name="detalle" id="detalle" placeholder="detalle"/>
+            <input class="form-control" rows="2" name="detalle" id="detalle" placeholder="detalle" [(ngModel)]="detalle"/>
         </div>
     </div>
     <div class="mb-3 row">
         <label for="text" class="col-sm-2 col-form-label">Periodo</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" name="perido" id="periodo" placeholder="periodo"/>
+            <input type="text" class="form-control" name="perido" id="periodo" placeholder="periodo" [(ngModel)]="periodo"/>
         </div>
     </div>
     <div class="right-nav ms-auto ">
-        <button class="btn btn-info right-nav ms-auto" (click)="addReg()">Agregar</button>
+        <input type="submit" value="Agregar tarea" class="btn btn-info right-nav ms-auto"/>
     </div>
 </form>

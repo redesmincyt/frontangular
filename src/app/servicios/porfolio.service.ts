@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Exp } from 'src/app/Exp';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,12 @@ export class PorfolioService {
 
   }
   onDeleteExp(expid: string):Observable<any> {
-    return this.http.delete('http://backendmbc.onrender.com:8080/borrar/{expid}')
+    console.log(expid);
+    return this.http.delete("http://backendmbc.onrender.com:8080/borrar/"+ expid)
+  }
+
+  onAddExp(newExp: Exp):Observable<any> {
+    console.log(newExp);
+    return this.http.post('http://backendmbc.onrender.com:8080/new/experiencia', newExp)
   }
 }

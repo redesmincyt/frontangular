@@ -11,6 +11,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { PorfolioService } from './servicios/porfolio.service';
 import { HttpClientModule} from '@angular/common/http';
 import { AddExperienciaComponent } from './components/add-experiencia/add-experiencia.component'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddExperienciaComponent } from './components/add-experiencia/add-experi
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
