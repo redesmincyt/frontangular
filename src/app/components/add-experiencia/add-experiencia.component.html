@@ -1,0 +1,35 @@
+<form  class="card mb-3">
+    <div class="mb-3 row">
+        <label for="text" class="col-sm-2 col-form-label">URL logo</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="explogo" id="explogo" placeholder="url del logo"/>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="text"class="col-sm-2 col-form-label" >Empresa</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="empresa" id="empresa" placeholder="empresa"/>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="text" class="col-sm-2 col-form-label">Puesto</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="puesto" id="puesto" placeholder="puesto"/>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="text" class="col-sm-2 col-form-label">Detalle</label>
+        <div class="col-sm-10">
+            <input class="form-control" rows="2" name="detalle" id="detalle" placeholder="detalle"/>
+        </div>
+    </div>
+    <div class="mb-3 row">
+        <label for="text" class="col-sm-2 col-form-label">Periodo</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" name="perido" id="periodo" placeholder="periodo"/>
+        </div>
+    </div>
+    <div class="right-nav ms-auto ">
+        <button class="btn btn-info right-nav ms-auto" (click)="addReg()">Agregar</button>
+    </div>
+</form>

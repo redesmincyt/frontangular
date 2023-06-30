@@ -1,0 +1,80 @@
+{
+    "experiencia":[{
+            "id":"0",
+            "logoexp":"img/fiuba.png",
+            "empresa":"FIUBA",
+            "puesto":"Docente Auxiliar",
+            "detalle":"Materia Señales y Sistemas",
+            "periodo":"Marzo 1988 - Actualidad"
+        },
+        {
+            "id":"1",
+            "logoexp":"img/mincyt.png",
+            "empresa":"MINCYT",
+            "puesto":"Administrador de Red",
+            "detalle":"Administracion y mantenimiento de servidores y servicios de internet",
+            "periodo":"Noviembre 1988 - Actualidad"
+        },
+        {
+            "id":"2",
+            "logoexp":"img/fiuba.png",
+            "empresa":"FIUBA",
+            "puesto":"Docente Auxiliar",
+            "detalle":"Materia Control Digital de la Maestria en Control",
+            "periodo":"Marzo 1998 - Diciembre 1999"
+        }
+    ],
+    "educacion" :[
+        { 
+            "logoedu":"img/iese.png",
+            "titulo":"Especialización en Criptografía y Seguridad Teleinfomática",
+            "institucion":"IESE - Instituto de Enseñanza Superior del Ejército",
+            "fechas":"Abril 2017 - Marzo 2018"
+        },
+        { 
+            "logoedu":"img/uba.png",
+            "titulo":"Ingeniera Electronica",
+            "institucion":"FIUBA",
+            "fechas":"Marzo 1980 - Marzo 1993"
+        },
+        { 
+            "logoedu":"img/enAzul.jpg",
+            "titulo":"Bachiller con orientacion docente",
+            "institucion":"Escuela Normal de Azul",
+            "fechas":"Marzo 1973 - Noviembre 1978"
+        }
+
+    ],
+    "skils": [
+        {
+            "habilidad":"Virtualizacion y VMWare",
+            "porciento":"77"
+        },
+        {
+            "habilidad":"Linux",
+            "porciento":"66"
+        }
+    ],
+    "proyectos": [
+        {
+            "logoproy":"img/logo_amanda.png",
+            "proyecto":"Sistema  de backup del datacenter con software libre Amanda",
+            "descrproy":"Proyecto e instalacion del sistema de backup en servidores virtualizado en vmware y virtualbox."
+        },
+        {
+            "logoproy":"img/asterisk.png",
+            "proyecto":"Conexion  de oficina  remota con telefonia IP Asterisk",
+            "descrproy":"Proyecto, configuracion e instalacion de una conexion de interno telefonico de una oficina remota con software libre y hardware economico"
+        },
+        {
+            "logoproy":"img/docker.png",
+            "proyecto":"Instalacion de servidores virtuales de Docker en el MINCYT",
+            "descrproy":"Proyecto e instalacion en vmware de servidores de Docker"
+        },
+        {
+            "logoproy":"img/gitlab.png",
+            "proyecto":"Instalacion de servidor de Gitlab en MINCYT",
+            "descrproy":"Para manejo de versionado y contar con repositorio local del software desarrollado para el Ministerio"
+        }
+    ]
+}

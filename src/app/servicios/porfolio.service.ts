@@ -7,11 +7,16 @@ import { Observable } from 'rxjs';
 })
 export class PorfolioService {
 
-  constructor(private http:HttpClient) {
-    
-   }
+    constructor(private http:HttpClient) {
+  }
 
   obtenerDatos():Observable<any>{
+    /*return this.http.get('http://backendmbc.onrender.com:8080/ver/experiencia')
+    return this.http.get('http://localhost:8080/ver/experiencia')  */
     return this.http.get('./assets/data/datos.json')
+
+  }
+  onDeleteExp(expid: string):Observable<any> {
+    return this.http.delete('http://backendmbc.onrender.com:8080/borrar/{expid}')
   }
 }

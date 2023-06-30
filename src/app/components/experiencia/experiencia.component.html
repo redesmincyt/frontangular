@@ -2,24 +2,18 @@
   <div class="container-sm">
     <div class="row gx-5">
       <div class="panel col-lg-12">
-            <nav class="flex-container navbar navbar-expand-lg navbar-light bg-light">
-              <div>
-                  <h2 class="section-title">EXPERIENCIA</h2>
-              </div>
-              <div class="right-nav ms-auto ">
-                <button class="btn btn-info right-nav ms-auto">Agregar</button>
-              </div>
-            </nav>
+        <h2 class="section-title">EXPERIENCIA LABORAL</h2>
+        <app-add-experiencia/>
         <div class="card mb-3" *ngFor="let exp of experienciaList">
           <div class="row g-0">
             <div class="col-md-4">
-              <img [src]="exp.logoexp" class="img-fluid rounded-start" alt="FIUBA">
+              <img [src]="exp.explogo" class="img-fluid rounded-start" alt="FIUBA">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <nav class="navbar justify-content-between">
                   <h3 class="card-title">{{exp.empresa}}</h3>
-                  <button class="btn btn-info right-nav ms-auto">Borrar</button>
+                  <button class="btn btn-info right-nav ms-auto" (click)="onDelete(exp.id)">Borrar</button>
                 </nav>
                 <h5 class="card-title">{{exp.puesto}}</h5>
                 <p class="card-text">{{exp.detalle}}</p>

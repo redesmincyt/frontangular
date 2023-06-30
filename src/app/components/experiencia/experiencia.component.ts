@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -10,13 +10,24 @@ import { HttpClientModule } from '@angular/common/http';
 export class ExperienciaComponent implements OnInit {
 
   experienciaList:any;
+  @Output() onDeleteExp: EventEmitter<String> = new EventEmitter();
+  
   constructor(private datosPorfolio:PorfolioService){}
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(  data =>{
+      this.experienciaList=data;
       
-      this.experienciaList=data.experiencia;
     });
+  }
+  
+  addReg(): void {
+    console.log("AGREGO REGISTRO");
+  }
+
+  onDelete(expid: String): void {
+    /*console.log("BORRO " + expid); */
+    this.onDeleteExp.emit(expid);
   }
 
 }
