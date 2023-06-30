@@ -12,18 +12,18 @@ export class PorfolioService {
   }
 
   obtenerDatos():Observable<any>{
-    /*return this.http.get('http://backendmbc.onrender.com:8080/ver/experiencia')
-    return this.http.get('http://localhost:8080/ver/experiencia')  */
-    return this.http.get('./assets/data/datos.json')
+    return this.http.get('https://backendmbc.onrender.com:8080/ver/experiencia')
+    /*return this.http.get('http://localhost:8080/ver/experiencia')  
+    return this.http.get('./assets/data/datos.json')*/
 
   }
   onDeleteExp(expid: string):Observable<any> {
     console.log(expid);
-    return this.http.delete("http://backendmbc.onrender.com:8080/borrar/"+ expid)
+    return this.http.delete("https://backendmbc.onrender.com:8080/borrar/"+ expid)
   }
 
   onAddExp(newExp: Exp):Observable<any> {
     console.log(newExp);
-    return this.http.post('http://backendmbc.onrender.com:8080/new/experiencia', newExp)
+    return this.http.post('https://backendmbc.onrender.com:8080/new/experiencia', newExp)
   }
 }
