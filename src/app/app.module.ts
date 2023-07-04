@@ -11,7 +11,8 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { PorfolioService } from './servicios/porfolio.service';
 import { HttpClientModule} from '@angular/common/http';
 import { AddExperienciaComponent } from './components/add-experiencia/add-experiencia.component'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InisesionComponent } from './components/inisesion/inisesion.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,14 @@ import { FormsModule } from '@angular/forms';
     EducacionComponent,
     SkillsComponent,
     ProyectosComponent,
-    AddExperienciaComponent
+    AddExperienciaComponent,
+    InisesionComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
